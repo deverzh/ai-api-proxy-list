@@ -214,6 +214,7 @@
 | 180 | 微雨API | [hu.weiyusc.top](https://hu.weiyusc.top) | 多模型 | 待确认 | - | 超时 |
 | 181 | 极速AI | [aicodee.com](https://aicodee.com) | 多模型 | 待确认 | - | 超时 |
 | 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | 超时 |
+|  | YAPI | [yapi.uk](https://yapi.uk) | Claude / GPT / Gemini / DeepSeek | [yapi.uk](https://yapi.uk) |  | 1234ms |
 
 ## 📚 数据来源
 
