@@ -213,7 +213,8 @@
 | 179 | 巨量API | [api.yidvps.cn](https://api.yidvps.cn) | 多模型 | 待确认 | - | 超时 |
 | 180 | 微雨API | [hu.weiyusc.top](https://hu.weiyusc.top) | 多模型 | 待确认 | - | 超时 |
 | 181 | 极速AI | [aicodee.com](https://aicodee.com) | 多模型 | 待确认 | - | 超时 |
-| 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | 超时 |
+| 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | - |
+| 183 | JiuRelay | [jiurelay.com](https://jiurelay.com/) | GPT、Claude、GLM | jiurelay.com | - | - |
 
 ## 📚 数据来源
 
