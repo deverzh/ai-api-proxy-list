@@ -223,6 +223,7 @@
 - [中转站竞技场](https://www.aiapipk.com/channels) - AI 中转站目录与测评平台
 - [LM Speed](https://lmspeed.net/zh/provider/category/relay) - 大模型 API 提供商性能测试平台
 - [OfoxAI Blog](https://ofox.ai/zh/blog/ai-api-relay-station-comparison-guide-2026) - AI API 中转站推荐与评测
+- [China AI Arbitrage](https://www.china-ai-arbitrage.xyz/) - 中国 AI 平台与中转站比价评测（60+ 平台价格/额度、95 个中转站排名、免费额度追踪）
 
 ---
 
