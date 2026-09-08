@@ -1,0 +1,41 @@
+{
+  "title": "API Proxy List",
+  "eyebrow": "Reference fork",
+  "subtitle": [
+    "A reference copy of",
+    "deverzh/ai-api-proxy-list"
+  ],
+  "status": "Upstream authorship and license preserved",
+  "motif": "fork",
+  "accent": "#5E6787",
+  "footer": "ai-api-proxy-list",
+  "overview_title": "Start with the original project",
+  "overview_subtitle": "This fork is a reference checkout, not an independently verified product or directory.",
+  "nodes": [
+    {
+      "icon": "library",
+      "title": "Upstream source",
+      "lines": [
+        "deverzh",
+        "ai-api-proxy-list"
+      ]
+    },
+    {
+      "icon": "fork",
+      "title": "Reference checkout",
+      "lines": [
+        "Existing docs retained.",
+        "Fork changes stay separate."
+      ]
+    },
+    {
+      "icon": "scope",
+      "title": "Check before reuse",
+      "lines": [
+        "License, changes and dates.",
+        "No independent certification."
+      ]
+    }
+  ],
+  "caveat": "Illustration of provenance. Follow upstream for current releases, support and contribution rules."
+}
