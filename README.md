@@ -214,6 +214,7 @@
 | 180 | 微雨API | [hu.weiyusc.top](https://hu.weiyusc.top) | 多模型 | 待确认 | - | 超时 |
 | 181 | 极速AI | [aicodee.com](https://aicodee.com) | 多模型 | 待确认 | - | 超时 |
 | 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | 超时 |
+| 183 | 深空 API | [api.91kun.top](https://api.91kun.top) | GPT / DeepSeek / Claude / Gemini / Grok / GLM / Kimi / Qwen | [api.91kun.top](https://api.91kun.top) |  |  |
 
 ## 📚 数据来源
 
