@@ -1,0 +1,391 @@
+"""
+Fetch all providers from all 13 pages of lmspeed, identify new ones vs README,
+and extract actual website URLs.
+"""
+import re
+import json
+
+README_PATH = r"i:\Downloads\ai-api-proxy-list\README.md"
+
+# All providers collected from pages 1-13
+all_providers = [
+    # Page 1
+    {"name":"ZenMux","href":"/zh/provider/zenmux-ai"},
+    {"name":"YUNWU API","href":"/zh/provider/yunwu-ai"},
+    {"name":"猫羽霖API","href":"/zh/provider/huashang-dpdns-org"},
+    {"name":"天絮 API","href":"/zh/provider/tianxu-api"},
+    {"name":"星见雅 API","href":"/zh/provider/api-xinjianya-top"},
+    {"name":"6i2","href":"/zh/provider/www-6i2-com"},
+    {"name":"IPv4 Beta LM Studio","href":"/zh/provider/ipv4-beta-lm-studio"},
+    {"name":"CatClaw API","href":"/zh/provider/www-catclawai-top"},
+    {"name":"钠 API","href":"/zh/provider/naapi-cc"},
+    {"name":"Sub2API","href":"/zh/provider/s2a-865199-xyz"},
+    {"name":"OpenRouter","href":"/zh/provider/openrouter"},
+    {"name":"微雨API","href":"/zh/provider/hu-weiyusc-top"},
+    {"name":"wzjself中转站","href":"/zh/provider/wzjself-org"},
+    {"name":"AIHubMix","href":"/zh/provider/aihubmix-com"},
+    {"name":"Stark GPT Load","href":"/zh/provider/stark-gpt-load-onrender-com"},
+    {"name":"速创API","href":"/zh/provider/suchuang"},
+    {"name":"CCTQ","href":"/zh/provider/code-b886-top"},
+    {"name":"发现AI","href":"/zh/provider/www-findcg-com"},
+    {"name":"Smart API","href":"/zh/provider/ai-smartall-cloud"},
+    {"name":"草丛GPT中转站","href":"/zh/provider/ai-adbog-com"},
+    {"name":"SmokeDivine AI","href":"/zh/provider/yansd666-com"},
+    {"name":"云智API","href":"/zh/provider/yunzhiapi-cn"},
+    {"name":"PICO AI","href":"/zh/provider/picoai-top"},
+    {"name":"柠檬API","href":"/zh/provider/new-lemonapi-site"},
+    # Page 2
+    {"name":"VVCode","href":"/zh/provider/vvcode-top"},
+    {"name":"ClawCloud Run","href":"/zh/provider/clawcloud-run"},
+    {"name":"MKE AI","href":"/zh/provider/tb-api-mkeai-com"},
+    {"name":"Realpics","href":"/zh/provider/realpics"},
+    {"name":"OfoxAI","href":"/zh/provider/api-ofox-ai"},
+    {"name":"Xiaomimimo Token Plan CN","href":"/zh/provider/xiaomimimo-token-plan-cn"},
+    {"name":"情酱的API站","href":"/zh/provider/api-byebug-cn"},
+    {"name":"无限智能","href":"/zh/provider/ai-oneinfinityai-com"},
+    {"name":"YouYouMao API","href":"/zh/provider/youyoumao-site"},
+    {"name":"小辣椒","href":"/zh/provider/yyds-215-im"},
+    {"name":"LiteRouter","href":"/zh/provider/api-literouter-com"},
+    {"name":"free_chatgpt_api","href":"/zh/provider/free-chatgpt-api"},
+    {"name":"SkyAI","href":"/zh/provider/api-071572-xyz"},
+    {"name":"Xiaomimimo API","href":"/zh/provider/xiaomimimo-api"},
+    {"name":"初叶🍂Furry API","href":"/zh/provider/ai-chuyel-top"},
+    {"name":"词元流动","href":"/zh/provider/tokenflux-dev"},
+    {"name":"GGBand API","href":"/zh/provider/nbr-ggband-tech"},
+    {"name":"9Router","href":"/zh/provider/rb6k9jv-9router-com"},
+    {"name":"TokenX24","href":"/zh/provider/tokenx24-com"},
+    {"name":"Sub2API","href":"/zh/provider/api-243706-xyz"},
+    {"name":"ABC Relay","href":"/zh/provider/www-abcrelay-com"},
+    {"name":"Spaceship","href":"/zh/provider/api-102298-xyz"},
+    {"name":"wuer的api站","href":"/zh/provider/api-minewuer-com"},
+    {"name":"OpenCode","href":"/zh/provider/opencode-ai"},
+    # Page 3
+    {"name":"CLI Proxy API Server","href":"/zh/provider/cpa-mn1-top"},
+    {"name":"XuYa公益站","href":"/zh/provider/openai-xuya-dev"},
+    {"name":"DuckCoding","href":"/zh/provider/www-duckcoding-ai"},
+    {"name":"冰のCodex","href":"/zh/provider/icoe-pp-ua"},
+    {"name":"Codex Proxy","href":"/zh/provider/codex-miaomiaocode-com"},
+    {"name":"ocool AI","href":"/zh/provider/ocool-ai"},
+    {"name":"星辰·AI","href":"/zh/provider/ai-centos-hk"},
+    {"name":"Omini Api","href":"/zh/provider/api-ominiapi-top"},
+    {"name":"祥云互联","href":"/zh/provider/ai-cloudcatc-cn-91"},
+    {"name":"NUWA","href":"/zh/provider/api-nuwaapi-com"},
+    {"name":"AI中转站","href":"/zh/provider/ai-192700-xyz"},
+    {"name":"小天公益站","href":"/zh/provider/new-api-xt-url-com"},
+    {"name":"Supabase AI Proxy","href":"/zh/provider/supabase-ai-proxy"},
+    {"name":"CNB Run Workspace Endpoint","href":"/zh/provider/cnb-run-workspace-endpoint"},
+    {"name":"极速AI","href":"/zh/provider/v2-aicodee-com"},
+    {"name":"巨量API","href":"/zh/provider/api-yidvps-cn"},
+    {"name":"晴辰云","href":"/zh/provider/gpt-qt-cool"},
+    {"name":"酒馆无限制免费API","href":"/zh/provider/jiuguan-wuxianzhi-mianfei-api"},
+    {"name":"天宫造物","href":"/zh/provider/cpa-tgzw-shop"},
+    {"name":"Hugging Face","href":"/zh/provider/router-huggingface-co"},
+    {"name":"QZZ CLI Proxy","href":"/zh/provider/qzz-cli-proxy"},
+    {"name":"温云","href":"/zh/provider/sxtuyxrxcgim-ap-northeast-1-clawcloudrun-com"},
+    {"name":"丰思理 AI","href":"/zh/provider/ai-fengsili-online"},
+    {"name":"WSocket AI","href":"/zh/provider/ai-wsocket-xyz"},
+    # Page 4
+    {"name":"EdgeFN API","href":"/zh/provider/edgefn-api"},
+    {"name":"BUZZ","href":"/zh/provider/buzzai-cc"},
+    {"name":"TeamPlus","href":"/zh/provider/teamplus"},
+    {"name":"Gemma","href":"/zh/provider/gemma-san-baby"},
+    {"name":"Kilo","href":"/zh/provider/kilo-ai"},
+    {"name":"Jey-API","href":"/zh/provider/openai-zidianidc-com"},
+    {"name":"QuicklyAPI","href":"/zh/provider/sub-jlypx-de"},
+    {"name":"Yanami","href":"/zh/provider/aiapi-yanami-vip"},
+    {"name":"OminiGen","href":"/zh/provider/ominigen"},
+    {"name":"Zeabur","href":"/zh/provider/cli-proxy-api-667-zeabur-app"},
+    {"name":"Wataruu CLI Proxy","href":"/zh/provider/wataruu-cli-proxy"},
+    {"name":"OpenRouter Fans","href":"/zh/provider/openrouter-fans"},
+    {"name":"52公益站","href":"/zh/provider/free-9e-nz"},
+    {"name":"DNSHE","href":"/zh/provider/imsnake-dart-us-ci"},
+    {"name":"F2API","href":"/zh/provider/api-f2api-com"},
+    {"name":"Vercel AI Gateway","href":"/zh/provider/vercel-ai-gateway"},
+    {"name":"Good HIDNS","href":"/zh/provider/good-hidns"},
+    {"name":"CIA","href":"/zh/provider/cia-288878-xyz"},
+    {"name":"ModelPool","href":"/zh/provider/www-modelpool-cn"},
+    {"name":"Sealos","href":"/zh/provider/new-api-imnlocrv-sealoshzh-site"},
+    {"name":"S.A.","href":"/zh/provider/api-komeiji-shiki-top"},
+    {"name":"包子铺","href":"/zh/provider/api-5202030-xyz"},
+    {"name":"VoAPI公益站","href":"/zh/provider/demo-voapi-top"},
+    {"name":"RRJ99 API","href":"/zh/provider/bt-rrj99-com"},
+    # Page 5
+    {"name":"Zhang19hao CLI Proxy","href":"/zh/provider/zhang19hao-cli-proxy"},
+    {"name":"中国教育和科研计算机网CERNET","href":"/zh/provider/models-sjtu-edu-cn"},
+    {"name":"简易-API中转站","href":"/zh/provider/jeniya-top"},
+    {"name":"Claw API","href":"/zh/provider/claw-88888868-xyz"},
+    {"name":"SakuraCode","href":"/zh/provider/codex-sakurapy-de"},
+    {"name":"无限AI","href":"/zh/provider/tokenwuxian-top"},
+    {"name":"Synapse","href":"/zh/provider/newapi-exynos-top-8443"},
+    {"name":"AWA1 API","href":"/zh/provider/awa1-api"},
+    {"name":"KuaeCloud Coding Plan Endpoint","href":"/zh/provider/kuaecloud-coding-plan-endpoint"},
+    {"name":"429496 AI","href":"/zh/provider/429496-ai"},
+    {"name":"Cheersgo API","href":"/zh/provider/cheersgo-api"},
+    {"name":"Saipubw API","href":"/zh/provider/saipubw-api"},
+    {"name":"Catiecli","href":"/zh/provider/skyag-xiamu-asia"},
+    {"name":"MIXAPI-3.3","href":"/zh/provider/ck67-top"},
+    {"name":"102417 API","href":"/zh/provider/api-102417-xyz"},
+    {"name":"遂人API","href":"/zh/provider/qkznpnwlumic-sealosgzg-site"},
+    {"name":"UniAiX","href":"/zh/provider/www-uniaix-com"},
+    {"name":"艾可API","href":"/zh/provider/aicanapi-com"},
+    {"name":"GLM BigModel Relay","href":"/zh/provider/glm-bigmodel-relay"},
+    {"name":"Kiro","href":"/zh/provider/kiro-nuiziyyds-com"},
+    {"name":"HanYue_AI","href":"/zh/provider/hyapi-hanyue-xyz"},
+    {"name":"数标标API-FS","href":"/zh/provider/apifs-shubiaobiao-cn"},
+    {"name":"San Baby AI","href":"/zh/provider/san-baby-ai"},
+    {"name":"Sub2API","href":"/zh/provider/api-123nhh-me"},
+    # Page 6
+    {"name":"ModelVerse API","href":"/zh/provider/modelverse-api"},
+    {"name":"LMProxy","href":"/zh/provider/lmproxy"},
+    {"name":"YSQD CLI Proxy","href":"/zh/provider/ysqd-cli-proxy"},
+    {"name":"Immersive Translate","href":"/zh/provider/aigw1-immersivetranslate-com"},
+    {"name":"Harui","href":"/zh/provider/www-harui-edu-kg"},
+    {"name":"联无所AI","href":"/zh/provider/lianwusuoai"},
+    {"name":"NanoGPT","href":"/zh/provider/nano-gpt-com"},
+    {"name":"API 额度共享平台","href":"/zh/provider/2c2ch1u11-share-api-0-hf-space"},
+    {"name":"UniAPI","href":"/zh/provider/uniai"},
+    {"name":"Yun API","href":"/zh/provider/api-zyai-online"},
+    {"name":"PackyAPI","href":"/zh/provider/codex-api-packycode-com"},
+    {"name":"A3","href":"/zh/provider/a3-awsl-app"},
+    {"name":"EnenCloud API","href":"/zh/provider/api-enencloud-top"},
+    {"name":"Gitee AI","href":"/zh/provider/gitee-ai"},
+    {"name":"Venlacy","href":"/zh/provider/api-venlacy-top"},
+    {"name":"Right Code","href":"/zh/provider/right-codes"},
+    {"name":"GG公益站-云GCLI","href":"/zh/provider/gcli-ggchan-dev"},
+    {"name":"HotaruAPI","href":"/zh/provider/api-hotaruapi-top"},
+    {"name":"线衣api","href":"/zh/provider/xianyi-zeabur-app"},
+    {"name":"Aidaxianyi Endpoint","href":"/zh/provider/aidaxianyi-endpoint"},
+    {"name":"theoldllm-api-pro","href":"/zh/provider/a1-6661966-xyz"},
+    {"name":"Punklorde17 API","href":"/zh/provider/punklorde17-api"},
+    {"name":"黑与白公益站","href":"/zh/provider/ai-hybgzs-com"},
+    {"name":"简小智API中转站","href":"/zh/provider/newapi-jianxiaozhi-chat"},
+    # Page 7
+    {"name":"Netease Mom API","href":"/zh/provider/netease-mom-api"},
+    {"name":"全球AI","href":"/zh/provider/globalai-vip"},
+    {"name":"ChatGTP","href":"/zh/provider/www-chatgtp-cn"},
+    {"name":"SeoSycy API","href":"/zh/provider/seosycy-api"},
+    {"name":"Square LLM Hub","href":"/zh/provider/square-llm-hub"},
+    {"name":"WONG公益站","href":"/zh/provider/wzw-pp-ua"},
+    {"name":"AI Platform","href":"/zh/provider/ai-platform-danke666-top"},
+    {"name":"123NHH API","href":"/zh/provider/new-123nhh-xyz"},
+    {"name":"WXKYW API","href":"/zh/provider/wxkyw-dpdns-org"},
+    {"name":"X666 API","href":"/zh/provider/x666-me"},
+    {"name":"20230621 API","href":"/zh/provider/20230621-xyz"},
+    {"name":"Netlib API","href":"/zh/provider/newapi-netlib-re"},
+    {"name":"OAPI UK","href":"/zh/provider/oapi-uk"},
+    {"name":"Veloera (HF Space)","href":"/zh/provider/veloera-hf"},
+    {"name":"DF-H API","href":"/zh/provider/newapi-df-h-com"},
+    {"name":"Fanyi 963312","href":"/zh/provider/fanyi-963312-xyz"},
+    {"name":"CPAPI EU (2)","href":"/zh/provider/cpapi-eu-2"},
+    {"name":"TBAI API","href":"/zh/provider/tbai-api"},
+    {"name":"Gemini Balance","href":"/zh/provider/gemini-balance-clawcloud"},
+    {"name":"V-API","href":"/zh/provider/v-api"},
+    {"name":"Fangyuan API","href":"/zh/provider/gptpay-store"},
+    {"name":"Gue API","href":"/zh/provider/api-gueai-com"},
+    {"name":"K2Think","href":"/zh/provider/k2t-shiho-top"},
+    {"name":"小智API","href":"/zh/provider/newai-aichat-ink"},
+    # Page 8
+    {"name":"一叶知秋API","href":"/zh/provider/88996-cloud"},
+    {"name":"FuturePPO API","href":"/zh/provider/futureppo-api"},
+    {"name":"Cerebras Sandbox","href":"/zh/provider/v-ag-api-eu-cc"},
+    {"name":"AI98","href":"/zh/provider/ai98-vip"},
+    {"name":"Baize 聚合 (HF Space)","href":"/zh/provider/baize-juhe-hf"},
+    {"name":"Aizex API","href":"/zh/provider/aizex-top"},
+    {"name":"ORBIAI","href":"/zh/provider/api-orbiai-cloud"},
+    {"name":"Chiban API","href":"/zh/provider/chiban-api"},
+    {"name":"Xmdbd","href":"/zh/provider/xmdbd"},
+    {"name":"PrismAI","href":"/zh/provider/ai-prism-uno"},
+    {"name":"NewAPI502","href":"/zh/provider/newapi502"},
+    {"name":"FRP Proxy Endpoint","href":"/zh/provider/frp-proxy-endpoint"},
+    {"name":"Wxstudio","href":"/zh/provider/wxstudio"},
+    {"name":"头顶冒火","href":"/zh/provider/burn-hair"},
+    {"name":"Undy API","href":"/zh/provider/vip-undyingapi-com"},
+    {"name":"Yuegle","href":"/zh/provider/yuegle"},
+    {"name":"SMNet Studio","href":"/zh/provider/smnet-studio"},
+    {"name":"AiroeAI","href":"/zh/provider/ai-airoe-cn"},
+    {"name":"InstCopilot API","href":"/zh/provider/instcopilot-api-com"},
+    {"name":"DeepSeek R1 Shop","href":"/zh/provider/deepseek-r1-shop"},
+    {"name":"拼好站","href":"/zh/provider/new-xigua-wiki"},
+    {"name":"Cotton API","href":"/zh/provider/cotton-api"},
+    {"name":"专盾Procdn","href":"/zh/provider/procdn"},
+    {"name":"Mine","href":"/zh/provider/mine"},
+    # Page 9
+    {"name":"GitHub Models","href":"/zh/provider/github-models"},
+    {"name":"1984","href":"/zh/provider/1984-hosting"},
+    {"name":"Imerji LLM","href":"/zh/provider/imerji-llm"},
+    {"name":"CloseAI Asia Proxy","href":"/zh/provider/closeai-asia-proxy"},
+    {"name":"sur","href":"/zh/provider/text-pollinations-ai"},
+    {"name":"Freddy Greve","href":"/zh/provider/ai-api-freddygreve-com"},
+    {"name":"AI Proxy Service","href":"/zh/provider/ai-proxy-4ba-cn-co"},
+    {"name":"华际 API","href":"/zh/provider/new-api-4"},
+    {"name":"Newagiai","href":"/zh/provider/newagiai"},
+    {"name":"毫秒API","href":"/zh/provider/haomiao-api"},
+    {"name":"GPTBest","href":"/zh/provider/gptbest"},
+    {"name":"352287 API","href":"/zh/provider/352287-api"},
+    {"name":"DDNSTO","href":"/zh/provider/rpi-sl-api-kooldns-cn"},
+    {"name":"ClawCloud Proxy (akmf)","href":"/zh/provider/clawcloud-akmf-3"},
+    {"name":"Deno Deploy Proxy","href":"/zh/provider/deno-deploy-proxy"},
+    {"name":"ClawCloud Proxy (rdao)","href":"/zh/provider/clawcloud-rdao"},
+    {"name":"DMXAPI","href":"/zh/provider/www-dmxapi-cn"},
+    {"name":"ALMZBH API","href":"/zh/provider/almzbh-api"},
+    {"name":"Zone Veloera","href":"/zh/provider/zone-veloera"},
+    {"name":"Rix","href":"/zh/provider/rix-chataiapi"},
+    {"name":"081007 API","href":"/zh/provider/081007-api"},
+    {"name":"GPT Proto","href":"/zh/provider/gpt-proto"},
+    {"name":"Meta API","href":"/zh/provider/meta-api"},
+    # Page 10
+    {"name":"Probe API","href":"/zh/provider/probe-api"},
+    {"name":"Fo-API","href":"/zh/provider/fo-api"},
+    {"name":"中软 VO (HF Space)","href":"/zh/provider/zhongruan-vo-hf"},
+    {"name":"Orange233 OneAPI","href":"/zh/provider/orange233-oneapi"},
+    {"name":"Fitue API","href":"/zh/provider/fitue-api"},
+    {"name":"DOI9 Translate","href":"/zh/provider/doi9-translate"},
+    {"name":"国信新网","href":"/zh/provider/zygf-guoxincloud-cn-1025"},
+    {"name":"GPTs API","href":"/zh/provider/gptsapi"},
+    {"name":"BT6 API","href":"/zh/provider/bt6-api"},
+    {"name":"Your API","href":"/zh/provider/yunrapi.cn"},
+    {"name":"Dev Tunnels Proxy","href":"/zh/provider/dev-tunnels-proxy"},
+    {"name":"丸美小沐写作","href":"/zh/provider/wanmei-xiaomu-xiezuo"},
+    {"name":"Joyue","href":"/zh/provider/joyue"},
+    {"name":"Hornsun","href":"/zh/provider/hornsun"},
+    {"name":"Nahcrof AI","href":"/zh/provider/nahcrof-ai"},
+    {"name":"Plumage API","href":"/zh/provider/plumage-api"},
+    {"name":"MrHua API","href":"/zh/provider/mrhua-api"},
+    {"name":"小爱AI","href":"/zh/provider/xiaoai-plus"},
+    {"name":"Akemidia MUA (HF Space)","href":"/zh/provider/akemidia-mua-hf"},
+    {"name":"Pptoymit API","href":"/zh/provider/pptoymit-api"},
+    {"name":"ePhone AI","href":"/zh/provider/ephone-ai-2"},
+    {"name":"小波 API","href":"/zh/provider/xiaobo-api"},
+    {"name":"Crond","href":"/zh/provider/crond"},
+    {"name":"665 API","href":"/zh/provider/665-api"},
+    # Page 11
+    {"name":"羊羊羊的API","href":"/zh/provider/yangyangyang-api"},
+    {"name":"Xinference","href":"/zh/provider/xinference"},
+    {"name":"FineOneAPI","href":"/zh/provider/fineoneapi"},
+    {"name":"Zhongzhuan Chat","href":"/zh/provider/api-zhongzhuan-chat"},
+    {"name":"箴理科技","href":"/zh/provider/provider"},
+    {"name":"我的旅行日志","href":"/zh/provider/my-travel-log"},
+    {"name":"SMNet Koyeb Proxy","href":"/zh/provider/smnet-koyeb-proxy"},
+    {"name":"KKSJ-AI","href":"/zh/provider/kksj-ai"},
+    {"name":"BytesBoost","href":"/zh/provider/bytesboost"},
+    {"name":"binaryYuki","href":"/zh/provider/binaryyuki"},
+    {"name":"AkashChat API","href":"/zh/provider/akashchat-api"},
+    {"name":"DuckDuck API","href":"/zh/provider/duckduck-api"},
+    {"name":"AICNN","href":"/zh/provider/aicnn"},
+    {"name":"Midjourney API","href":"/zh/provider/midjourney-api"},
+    {"name":"ZEN-AI VIP","href":"/zh/provider/vip-zen-ai-top"},
+    {"name":"Yuen Sze Hong","href":"/zh/provider/poe-yuen-network-top"},
+    {"name":"KFCV50","href":"/zh/provider/kfcv50"},
+    {"name":"AIO通用智能服务平台","href":"/zh/provider/aio-intelligence"},
+    {"name":"Puzhehei","href":"/zh/provider/api"},
+    {"name":"Zeabur","href":"/zh/provider/neapi-zeabur-app"},
+    {"name":"OhMyGPT","href":"/zh/provider/www-ohmygpt-com"},
+    {"name":"TheoremHub API","href":"/zh/provider/theoremhub-api"},
+    {"name":"微B API","href":"/zh/provider/new-wei-bi"},
+    # Page 12
+    {"name":"Koyeb Ollama Proxy","href":"/zh/provider/koyeb-ollama-proxy"},
+    {"name":"SanShui API","href":"/zh/provider/sanshui-api"},
+    {"name":"BLJJ API","href":"/zh/provider/bljj-api"},
+    {"name":"CRS 802011 API","href":"/zh/provider/crs-802011-xyz"},
+    {"name":"CCH-NP API","href":"/zh/provider/cch-np-cat-beer"},
+    {"name":"UnifyLLM","href":"/zh/provider/unifyllm"},
+    {"name":"OpenOpen8 API","href":"/zh/provider/openopen8-api"},
+    {"name":"AI5","href":"/zh/provider/api-ai5-my"},
+    {"name":"Hajimi API","href":"/zh/provider/hajimi"},
+    {"name":"Akass API","href":"/zh/provider/akass-api"},
+    {"name":"AIGC Arthals","href":"/zh/provider/aigc-arthals-ink"},
+    {"name":"Peterlyf HGB (HF Space)","href":"/zh/provider/peterlyf-hgb-hf"},
+    {"name":"ClawCloud Proxy (jhgpt)","href":"/zh/provider/clawcloud-jhgpt"},
+    {"name":"MonkingAI","href":"/zh/provider/www-monking-ai"},
+    {"name":"Any Router","href":"/zh/provider/anyrouter-top"},
+    {"name":"AZ Rix","href":"/zh/provider/az-rix"},
+    {"name":"Smz Ai","href":"/zh/provider/smz6-com"},
+    {"name":"AI新境","href":"/zh/provider/aixj-vip"},
+    {"name":"新生智码工坊","href":"/zh/provider/apiport-cc-cd"},
+    {"name":"Qwen","href":"/zh/provider/qwen-chat-aigpu-cn"},
+    {"name":"帆软","href":"/zh/provider/fanruan"},
+    {"name":"酸枝云","href":"/zh/provider/suanzhi-cloud"},
+    {"name":"SUFY","href":"/zh/provider/sufy"},
+    # Page 13 - already collected
+]
+
+# Deduplicate by name
+seen = set()
+unique_providers = []
+for p in all_providers:
+    if p["name"] not in seen:
+        seen.add(p["name"])
+        unique_providers.append(p)
+
+print(f"Total unique providers from lmspeed: {len(unique_providers)}")
+
+# Read current README to extract existing names
+with open(README_PATH, "r", encoding="utf-8") as f:
+    readme = f.read()
+
+# Extract all existing names from the table
+table_start = readme.find("| 名称 | 官网 |")
+table_end = readme.find("\n\n", table_start)
+table = readme[table_start:table_end]
+
+existing_names = set()
+for line in table.split("\n"):
+    if line.startswith("| ") and not line.startswith("| 名称") and not line.startswith("|:") and not line.startswith("| ❌"):
+        parts = line.split(" | ")
+        if len(parts) >= 2:
+            name = parts[0].lstrip("| ").strip()
+            existing_names.add(name)
+    elif line.startswith("| ❌"):
+        # Name follows after ❌
+        parts = line.split(" | ")
+        if len(parts) >= 2:
+            name = parts[0].lstrip("| ❌").strip()
+            existing_names.add(name)
+
+# Also check for name variations using domains
+existing_domains = set()
+for m in re.finditer(r'\[([^\]]+)\]\(https?://([^\)]+)\)', table):
+    domain = m.group(2).split('/')[0].replace('www.', '')
+    existing_domains.add(domain)
+
+print(f"Existing entries in README: {len(existing_names)}")
+
+# Find new providers
+new_providers = []
+for p in unique_providers:
+    name = p["name"]
+    # Extract domain from href
+    href = p["href"]
+    domain_hint = href.replace("/zh/provider/", "").replace("-", ".")
+    
+    # Check if already exists in README by name or domain
+    name_lower = name.lower().replace(" ", "").replace("-", "").replace(".", "")
+    found = False
+    for en in existing_names:
+        en_lower = en.lower().replace(" ", "").replace("-", "").replace(".", "")
+        if name_lower in en_lower or en_lower in name_lower:
+            found = True
+            break
+    
+    # Also check by domain
+    for ed in existing_domains:
+        if domain_hint[:10] in ed or ed[:10] in domain_hint:
+            found = True
+            break
+    
+    if not found:
+        new_providers.append(p)
+
+print(f"\nNew providers not in README: {len(new_providers)}")
+print("\n" + "="*80)
+for p in new_providers:
+    domain_guess = p["href"].replace("/zh/provider/", "")
+    # Clean up domain guess
+    domain_guess = domain_guess.replace("-", ".")
+    print(f"  {p['name']:<35s} -> {domain_guess}")
+
+# Output as JSON for easy processing
+with open(r"i:\Downloads\ai-api-proxy-list\new_providers.json", "w", encoding="utf-8") as f:
+    json.dump(new_providers, f, ensure_ascii=False, indent=2)
+
+print(f"\nSaved to new_providers.json")

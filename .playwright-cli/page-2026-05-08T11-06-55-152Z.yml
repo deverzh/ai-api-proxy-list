@@ -1,0 +1,350 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "EasyRouter EasyRouter" [ref=e4] [cursor=pointer]:
+        - /url: /en/docs/api
+        - img "EasyRouter" [ref=e5]
+        - generic [ref=e6]: EasyRouter
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: https://easyrouter.io/
+        - link "Console" [ref=e9] [cursor=pointer]:
+          - /url: https://easyrouter.io/console/token
+        - link "Pricing" [ref=e10] [cursor=pointer]:
+          - /url: https://easyrouter.io/pricing
+        - link "Docs" [ref=e11] [cursor=pointer]:
+          - /url: /en/docs/api
+      - generic [ref=e12]:
+        - button "Open Search" [ref=e13]:
+          - img [ref=e14]
+        - button "Toggle Theme" [ref=e17]:
+          - img [ref=e18]
+          - img [ref=e24]
+        - button "Choose a language" [ref=e26]:
+          - img [ref=e27]
+  - main [ref=e31]:
+    - generic:
+      - button "Collapse Sidebar":
+        - img
+      - button "Open Search":
+        - img
+    - complementary [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - link "EasyRouter EasyRouter":
+            - /url: /en/docs/api
+            - generic:
+              - img "EasyRouter"
+              - generic: EasyRouter
+          - button "Collapse Sidebar" [ref=e35]:
+            - img [ref=e36]
+        - button "Search ⌘ K":
+          - img
+          - text: Search
+          - generic:
+            - generic: ⌘
+            - generic: K
+      - generic [ref=e40]:
+        - link "API Reference" [ref=e41] [cursor=pointer]:
+          - /url: /en/docs/api
+        - generic [ref=e42]:
+          - button "AI Model API" [expanded] [ref=e43]:
+            - text: AI Model API
+            - img [ref=e44]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - button "Chat" [expanded] [ref=e48]:
+                - text: Chat
+                - img [ref=e49]
+              - generic [ref=e51]:
+                - link "Native Claude Format POST" [ref=e52] [cursor=pointer]:
+                  - /url: /en/docs/api/ai-model/chat/createmessage
+                  - text: Native Claude Format
+                  - generic [ref=e53]: POST
+                - button "Native Gemini Format" [ref=e55]:
+                  - text: Native Gemini Format
+                  - img [ref=e56]
+                - button "Native OpenAI Format" [ref=e59]:
+                  - text: Native OpenAI Format
+                  - img [ref=e60]
+            - generic [ref=e62]:
+              - button "Images" [expanded] [ref=e63]:
+                - text: Images
+                - img [ref=e64]
+              - generic [ref=e66]:
+                - button "Native Gemini Format" [ref=e68]:
+                  - text: Native Gemini Format
+                  - img [ref=e69]
+                - button "Native OpenAI Format" [ref=e72]:
+                  - text: Native OpenAI Format
+                  - img [ref=e73]
+            - generic [ref=e75]:
+              - button "Models" [expanded] [ref=e76]:
+                - text: Models
+                - img [ref=e77]
+              - generic [ref=e80]:
+                - button "List Models" [expanded] [ref=e81]:
+                  - text: List Models
+                  - img [ref=e82]
+                - generic [ref=e84]:
+                  - link "Native OpenAI Format GET" [ref=e85] [cursor=pointer]:
+                    - /url: /en/docs/api/ai-model/models/list/listmodels
+                    - text: Native OpenAI Format
+                    - generic [ref=e86]: GET
+                  - link "Native Gemini Format GET" [ref=e87] [cursor=pointer]:
+                    - /url: /en/docs/api/ai-model/models/list/listmodelsgemini
+                    - text: Native Gemini Format
+                    - generic [ref=e88]: GET
+        - generic [ref=e89]:
+          - button "Management API" [expanded] [ref=e90]:
+            - text: Management API
+            - img [ref=e91]
+          - generic [ref=e93]:
+            - link "Authentication System Description (Auth)" [ref=e94] [cursor=pointer]:
+              - /url: /en/docs/api/management/auth
+            - generic [ref=e95]:
+              - button "Logs" [expanded] [ref=e96]:
+                - text: Logs
+                - img [ref=e97]
+              - generic [ref=e99]:
+                - link "Delete Historical Logs DELETE" [ref=e100] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-delete
+                  - text: Delete Historical Logs
+                  - generic [ref=e101]: DELETE
+                - link "Get All Logs GET" [ref=e102] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-get
+                  - text: Get All Logs
+                  - generic [ref=e103]: GET
+                - link "Search Logs GET" [ref=e104] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-search-get
+                  - text: Search Logs
+                  - generic [ref=e105]: GET
+                - link "Get Personal Logs GET" [ref=e106] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-self-get
+                  - text: Get Personal Logs
+                  - generic [ref=e107]: GET
+                - link "Search Personal Logs GET" [ref=e108] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-self-search-get
+                  - text: Search Personal Logs
+                  - generic [ref=e109]: GET
+                - link "Get Personal Log Statistics GET" [ref=e110] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-self-stat-get
+                  - text: Get Personal Log Statistics
+                  - generic [ref=e111]: GET
+                - link "Get Log Statistics GET" [ref=e112] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-stat-get
+                  - text: Get Log Statistics
+                  - generic [ref=e113]: GET
+                - link "Get Logs by Token GET" [ref=e114] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-token-get
+                  - text: Get Logs by Token
+                  - generic [ref=e115]: GET
+            - generic [ref=e116]:
+              - button "Token Management" [expanded] [ref=e117]:
+                - text: Token Management
+                - img [ref=e118]
+              - generic [ref=e120]:
+                - link "Batch Delete Tokens POST" [ref=e121] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-batch-post
+                  - text: Batch Delete Tokens
+                  - generic [ref=e122]: POST
+                - link "Get All Tokens GET" [ref=e123] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-get
+                  - text: Get All Tokens
+                  - generic [ref=e124]: GET
+                - link "Delete Token DELETE" [ref=e125] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-id-delete
+                  - text: Delete Token
+                  - generic [ref=e126]: DELETE
+                - link "Get Specified Token GET" [ref=e127] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-id-get
+                  - text: Get Specified Token
+                  - generic [ref=e128]: GET
+                - link "Create Token POST" [ref=e129] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-post
+                  - text: Create Token
+                  - generic [ref=e130]: POST
+                - link "Update Token PUT" [ref=e131] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-put
+                  - text: Update Token
+                  - generic [ref=e132]: PUT
+                - link "Search Tokens GET" [ref=e133] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-search-get
+                  - text: Search Tokens
+                  - generic [ref=e134]: GET
+                - link "Get Token Usage GET" [ref=e135] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/usage-token-get
+                  - text: Get Token Usage
+                  - generic [ref=e136]: GET
+            - generic [ref=e137]:
+              - button "User Management" [expanded] [ref=e138]:
+                - text: User Management
+                - img [ref=e139]
+              - link "Get Current User Information GET" [ref=e142] [cursor=pointer]:
+                - /url: /en/docs/api/management/user-management/user-self-get
+                - text: Get Current User Information
+                - generic [ref=e143]: GET
+      - generic [ref=e145]:
+        - button "Choose a language" [ref=e146]:
+          - img [ref=e147]
+        - link [ref=e151] [cursor=pointer]:
+          - /url: https://easyrouter.io/
+          - img [ref=e152]
+        - button "Toggle Theme" [ref=e155]:
+          - img [ref=e156]
+          - img [ref=e162]
+    - generic [ref=e164]:
+      - link "Quick Start" [ref=e165] [cursor=pointer]:
+        - /url: /en/docs/guide/quick-start
+      - link "API Reference" [ref=e166] [cursor=pointer]:
+        - /url: /en/docs/api
+      - link "AI Applications" [ref=e167] [cursor=pointer]:
+        - /url: /en/docs/apps
+    - article [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]: AI Model API
+        - img [ref=e172]
+        - generic [ref=e174]: Models
+        - img [ref=e175]
+        - generic [ref=e177]: List Models
+      - heading "Native OpenAI Format" [level=1] [ref=e178]
+      - button "Copy Markdown" [ref=e180]:
+        - img [ref=e181]
+        - text: Copy Markdown
+      - generic [ref=e184]:
+        - paragraph [ref=e185]: Get a list of currently available models.
+        - paragraph [ref=e186]: "Automatically identify the return format based on the request headers:"
+        - list [ref=e187]:
+          - listitem [ref=e188]:
+            - text: Returns Anthropic format when
+            - code [ref=e189]: x-api-key
+            - text: and
+            - code [ref=e190]: anthropic-version
+            - text: headers are present
+          - listitem [ref=e191]:
+            - text: Returns Gemini format when
+            - code [ref=e192]: x-goog-api-key
+            - text: header or
+            - code [ref=e193]: key
+            - text: query parameter is present
+          - listitem [ref=e194]: Returns OpenAI format in other cases
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - button "loading..." [ref=e199]
+              - generic [ref=e200]:
+                - generic [ref=e201]: GET
+                - generic [ref=e202]:
+                  - code
+                  - generic [ref=e203]: /
+                  - code [ref=e204]: v1
+                  - generic [ref=e205]: /
+                  - code [ref=e206]: models
+                - button "Send" [ref=e207]
+              - button "Authorization" [ref=e209]:
+                - text: Authorization
+                - img [ref=e210]
+              - button "Header" [ref=e213]:
+                - text: Header
+                - img [ref=e214]
+              - button "Query" [ref=e217]:
+                - text: Query
+                - img [ref=e218]
+            - generic [ref=e220]:
+              - heading "Authorization" [level=2] [ref=e221]:
+                - link "Authorization" [ref=e222] [cursor=pointer]:
+                  - /url: "#authorization"
+                - img [ref=e223]
+              - paragraph [ref=e226]: BearerAuth
+            - generic [ref=e228]:
+              - generic [ref=e229]:
+                - generic [ref=e230]: Authorization
+                - generic [ref=e231]: Bearer <token>
+              - generic [ref=e232]:
+                - paragraph [ref=e233]:
+                  - text: "Authenticate using a Bearer Token. Format:"
+                  - code [ref=e234]: "Authorization: Bearer sk-xxxxxx"
+                - paragraph [ref=e235]:
+                  - text: "In:"
+                  - code [ref=e236]: header
+            - heading "Query Parameters" [level=2] [ref=e237]:
+              - link "Query Parameters" [ref=e238] [cursor=pointer]:
+                - /url: "#query-parameters"
+              - img [ref=e239]
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e245]: key?
+                - generic [ref=e246]: string
+              - paragraph [ref=e248]: Google API Key (for Gemini format)
+            - heading "Header Parameters" [level=2] [ref=e249]:
+              - link "Header Parameters" [ref=e250] [cursor=pointer]:
+                - /url: "#header-parameters"
+              - img [ref=e251]
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - generic [ref=e256]:
+                  - generic [ref=e257]: x-api-key?
+                  - generic [ref=e258]: string
+                - paragraph [ref=e260]: Anthropic API Key (for Claude format)
+              - generic [ref=e261]:
+                - generic [ref=e262]:
+                  - generic [ref=e263]: anthropic-version?
+                  - generic [ref=e264]: string
+                - paragraph [ref=e266]: Anthropic API version
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]: x-goog-api-key?
+                  - generic [ref=e270]: string
+                - paragraph [ref=e272]: Google API Key (for Gemini format)
+            - heading "Response Body" [level=2] [ref=e273]:
+              - link "Response Body" [ref=e274] [cursor=pointer]:
+                - /url: "#response-body"
+              - img [ref=e275]
+            - generic [ref=e278]:
+              - heading "200 application/json" [level=3] [ref=e280]:
+                - button "200" [ref=e281]:
+                  - img [ref=e282]
+                  - text: "200"
+                - paragraph [ref=e284]: application/json
+              - heading "401 application/json" [level=3] [ref=e286]:
+                - button "401" [ref=e287]:
+                  - img [ref=e288]
+                  - text: "401"
+                - paragraph [ref=e290]: application/json
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - tablist [ref=e294]:
+                - tab "cURL" [selected] [ref=e295]: cURL
+                - tab "JavaScript" [ref=e297]: JavaScript
+                - tab "Go" [ref=e299]: Go
+                - tab "Python" [ref=e301]: Python
+                - tab "Java" [ref=e303]: Java
+                - tab "C#" [ref=e305]: C#
+              - tabpanel "cURL" [ref=e307]:
+                - figure [ref=e308]:
+                  - button "Copy Text" [ref=e310]:
+                    - img [ref=e311]
+                  - region [ref=e314]:
+                    - code [ref=e316]:
+                      - generic [ref=e317]: curl -X GET "https://easyrouter.io/v1/models"
+            - generic [ref=e318]:
+              - tablist [ref=e319]:
+                - tab "200" [selected] [ref=e320]
+                - tab "401" [ref=e321]
+              - tabpanel "200" [ref=e322]:
+                - figure [ref=e323]:
+                  - button "Copy Text" [ref=e325]:
+                    - img [ref=e326]
+                  - region [ref=e329]:
+                    - code [ref=e331]:
+                      - generic [ref=e332]: "{"
+                      - generic [ref=e333]: "\"object\": \"list\","
+                      - generic [ref=e334]: "\"data\": ["
+                      - generic [ref=e335]: "{"
+                      - generic [ref=e336]: "\"id\": \"gpt-4\","
+                      - generic [ref=e337]: "\"object\": \"model\","
+                      - generic [ref=e338]: "\"created\": 0,"
+                      - generic [ref=e339]: "\"owned_by\": \"openai\""
+                      - generic [ref=e340]: "}"
+                      - generic [ref=e341]: "]"
+                      - generic [ref=e342]: "}"

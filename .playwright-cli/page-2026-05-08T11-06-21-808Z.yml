@@ -1,0 +1,242 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "EasyRouter EasyRouter" [ref=e4] [cursor=pointer]:
+        - /url: /en/docs/api
+        - img "EasyRouter" [ref=e5]
+        - generic [ref=e6]: EasyRouter
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: https://easyrouter.io/
+        - link "Console" [ref=e9] [cursor=pointer]:
+          - /url: https://easyrouter.io/console/token
+        - link "Pricing" [ref=e10] [cursor=pointer]:
+          - /url: https://easyrouter.io/pricing
+        - link "Docs" [ref=e11] [cursor=pointer]:
+          - /url: /en/docs/api
+      - generic [ref=e12]:
+        - button "Open Search" [ref=e13]:
+          - img [ref=e14]
+        - button "Toggle Theme" [ref=e17]:
+          - img [ref=e18]
+          - img [ref=e24]
+        - button "Choose a language" [ref=e26]:
+          - img [ref=e27]
+  - main [ref=e31]:
+    - generic:
+      - button "Collapse Sidebar":
+        - img
+      - button "Open Search":
+        - img
+    - complementary [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - link "EasyRouter EasyRouter":
+            - /url: /en/docs/api
+            - generic:
+              - img "EasyRouter"
+              - generic: EasyRouter
+          - button "Collapse Sidebar" [ref=e35]:
+            - img [ref=e36]
+        - button "Search ⌘ K":
+          - img
+          - text: Search
+          - generic:
+            - generic: ⌘
+            - generic: K
+      - generic [ref=e40]:
+        - link "API Reference" [ref=e41] [cursor=pointer]:
+          - /url: /en/docs/api
+        - generic [ref=e42]:
+          - button "AI Model API" [expanded] [ref=e43]:
+            - text: AI Model API
+            - img [ref=e44]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - button "Chat" [expanded] [ref=e48]:
+                - text: Chat
+                - img [ref=e49]
+              - generic [ref=e51]:
+                - link "Native Claude Format POST" [ref=e52] [cursor=pointer]:
+                  - /url: /en/docs/api/ai-model/chat/createmessage
+                  - text: Native Claude Format
+                  - generic [ref=e53]: POST
+                - button "Native Gemini Format" [ref=e55]:
+                  - text: Native Gemini Format
+                  - img [ref=e56]
+                - button "Native OpenAI Format" [ref=e59]:
+                  - text: Native OpenAI Format
+                  - img [ref=e60]
+            - generic [ref=e62]:
+              - button "Images" [expanded] [ref=e63]:
+                - text: Images
+                - img [ref=e64]
+              - generic [ref=e66]:
+                - button "Native Gemini Format" [ref=e68]:
+                  - text: Native Gemini Format
+                  - img [ref=e69]
+                - button "Native OpenAI Format" [ref=e72]:
+                  - text: Native OpenAI Format
+                  - img [ref=e73]
+            - generic [ref=e75]:
+              - button "Models" [expanded] [ref=e76]:
+                - text: Models
+                - img [ref=e77]
+              - button "List Models" [ref=e81]:
+                - text: List Models
+                - img [ref=e82]
+        - generic [ref=e84]:
+          - button "Management API" [expanded] [ref=e85]:
+            - text: Management API
+            - img [ref=e86]
+          - generic [ref=e88]:
+            - link "Authentication System Description (Auth)" [ref=e89] [cursor=pointer]:
+              - /url: /en/docs/api/management/auth
+            - generic [ref=e90]:
+              - button "Logs" [expanded] [ref=e91]:
+                - text: Logs
+                - img [ref=e92]
+              - generic [ref=e94]:
+                - link "Delete Historical Logs DELETE" [ref=e95] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-delete
+                  - text: Delete Historical Logs
+                  - generic [ref=e96]: DELETE
+                - link "Get All Logs GET" [ref=e97] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-get
+                  - text: Get All Logs
+                  - generic [ref=e98]: GET
+                - link "Search Logs GET" [ref=e99] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-search-get
+                  - text: Search Logs
+                  - generic [ref=e100]: GET
+                - link "Get Personal Logs GET" [ref=e101] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-self-get
+                  - text: Get Personal Logs
+                  - generic [ref=e102]: GET
+                - link "Search Personal Logs GET" [ref=e103] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-self-search-get
+                  - text: Search Personal Logs
+                  - generic [ref=e104]: GET
+                - link "Get Personal Log Statistics GET" [ref=e105] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-self-stat-get
+                  - text: Get Personal Log Statistics
+                  - generic [ref=e106]: GET
+                - link "Get Log Statistics GET" [ref=e107] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-stat-get
+                  - text: Get Log Statistics
+                  - generic [ref=e108]: GET
+                - link "Get Logs by Token GET" [ref=e109] [cursor=pointer]:
+                  - /url: /en/docs/api/management/logs/log-token-get
+                  - text: Get Logs by Token
+                  - generic [ref=e110]: GET
+            - generic [ref=e111]:
+              - button "Token Management" [expanded] [ref=e112]:
+                - text: Token Management
+                - img [ref=e113]
+              - generic [ref=e115]:
+                - link "Batch Delete Tokens POST" [ref=e116] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-batch-post
+                  - text: Batch Delete Tokens
+                  - generic [ref=e117]: POST
+                - link "Get All Tokens GET" [ref=e118] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-get
+                  - text: Get All Tokens
+                  - generic [ref=e119]: GET
+                - link "Delete Token DELETE" [ref=e120] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-id-delete
+                  - text: Delete Token
+                  - generic [ref=e121]: DELETE
+                - link "Get Specified Token GET" [ref=e122] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-id-get
+                  - text: Get Specified Token
+                  - generic [ref=e123]: GET
+                - link "Create Token POST" [ref=e124] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-post
+                  - text: Create Token
+                  - generic [ref=e125]: POST
+                - link "Update Token PUT" [ref=e126] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-put
+                  - text: Update Token
+                  - generic [ref=e127]: PUT
+                - link "Search Tokens GET" [ref=e128] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/token-search-get
+                  - text: Search Tokens
+                  - generic [ref=e129]: GET
+                - link "Get Token Usage GET" [ref=e130] [cursor=pointer]:
+                  - /url: /en/docs/api/management/token-management/usage-token-get
+                  - text: Get Token Usage
+                  - generic [ref=e131]: GET
+            - generic [ref=e132]:
+              - button "User Management" [expanded] [ref=e133]:
+                - text: User Management
+                - img [ref=e134]
+              - link "Get Current User Information GET" [ref=e137] [cursor=pointer]:
+                - /url: /en/docs/api/management/user-management/user-self-get
+                - text: Get Current User Information
+                - generic [ref=e138]: GET
+      - generic [ref=e140]:
+        - button "Choose a language" [ref=e141]:
+          - img [ref=e142]
+        - link [ref=e146] [cursor=pointer]:
+          - /url: https://easyrouter.io/
+          - img [ref=e147]
+        - button "Toggle Theme" [ref=e150]:
+          - img [ref=e151]
+          - img [ref=e157]
+    - generic [ref=e159]:
+      - link "Quick Start" [ref=e160] [cursor=pointer]:
+        - /url: /en/docs/guide/quick-start
+      - link "API Reference" [ref=e161] [cursor=pointer]:
+        - /url: /en/docs/api
+      - link "AI Applications" [ref=e162] [cursor=pointer]:
+        - /url: /en/docs/apps
+    - generic [ref=e163]:
+      - article [ref=e164]:
+        - heading "API Reference" [level=1] [ref=e165]
+        - paragraph [ref=e166]: EasyRouter Complete API Documentation
+        - button "Copy Markdown" [ref=e168]:
+          - img [ref=e169]
+          - text: Copy Markdown
+        - generic [ref=e172]:
+          - heading "Overview" [level=2] [ref=e173]:
+            - link "Overview" [ref=e174] [cursor=pointer]:
+              - /url: "#overview"
+            - img [ref=e175]
+          - paragraph [ref=e178]:
+            - text: "EasyRouter provides a complete set of RESTful API interfaces, categorized into two main types:"
+            - strong [ref=e179]: AI Model APIs
+            - text: and
+            - strong [ref=e180]: Management APIs
+            - text: . You can use these interfaces to invoke AI capabilities and perform system management functions.
+          - heading "AI Model APIs" [level=2] [ref=e181]:
+            - link "AI Model APIs" [ref=e182] [cursor=pointer]:
+              - /url: "#ai-model-apis"
+            - img [ref=e183]
+          - paragraph [ref=e186]: AI Model APIs provide calls for various AI capabilities, compatible with the OpenAI API format.
+          - generic [ref=e187]:
+            - link "Model List Get a list of available models." [ref=e188] [cursor=pointer]:
+              - /url: /en/docs/api/ai-model/models/list/listmodels
+              - img [ref=e190]
+              - heading "Model List" [level=3] [ref=e191]
+              - paragraph [ref=e192]: Get a list of available models.
+            - link "Chat Conversation completion API." [ref=e193] [cursor=pointer]:
+              - /url: /en/docs/api/ai-model/chat/openai/createchatcompletion
+              - img [ref=e195]
+              - heading "Chat" [level=3] [ref=e197]
+              - paragraph [ref=e198]: Conversation completion API.
+            - link "Images AI image generation API." [ref=e199] [cursor=pointer]:
+              - /url: /en/docs/api/ai-model/images/openai/post-v1-images-generations
+              - img [ref=e201]
+              - heading "Images" [level=3] [ref=e205]
+              - paragraph [ref=e206]: AI image generation API.
+      - generic [ref=e208]:
+        - heading "On this page" [level=3] [ref=e209]:
+          - img [ref=e210]
+          - text: On this page
+        - generic [ref=e212]:
+          - link "Overview" [ref=e213] [cursor=pointer]:
+            - /url: "#overview"
+            - text: Overview
+          - link "AI Model APIs" [ref=e215] [cursor=pointer]:
+            - /url: "#ai-model-apis"
+            - text: AI Model APIs

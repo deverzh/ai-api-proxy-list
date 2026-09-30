@@ -1,0 +1,372 @@
+{
+  "generated_at": "2026-05-08T11:02:16+00:00",
+  "source_readme": "I:\\Downloads\\ai-api-proxy-list\\README.md",
+  "provider_count": 5,
+  "notes": [
+    "high/medium candidates were found in fetched page text or links.",
+    "low candidates are inferred from reachable api.<domain>/v1 or <domain>/v1 and need manual review.",
+    "status/elapsed_ms on a candidate comes from probing <candidate>/models; 401/403 may still mean the base URL exists."
+  ],
+  "providers": [
+    {
+      "index": 1,
+      "name": "paintbot",
+      "homepage": "https://oneapi.paintbot.top",
+      "models_from_readme": "多模型",
+      "latency_from_readme": "60ms",
+      "checked_at": "2026-05-08T10:59:38+00:00",
+      "homepage_status": 200,
+      "homepage_ms": 21443,
+      "homepage_title": "New API",
+      "pages_checked": [
+        {
+          "url": "https://oneapi.paintbot.top",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 21443,
+          "final_url": "https://oneapi.paintbot.top",
+          "title": "New API",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://oneapi.paintbot.top/docs",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 21454,
+          "final_url": "https://oneapi.paintbot.top/docs",
+          "title": "New API",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://oneapi.paintbot.top/doc",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 21571,
+          "final_url": "https://oneapi.paintbot.top/doc",
+          "title": "New API",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        }
+      ],
+      "api_base_url_candidates": [
+        {
+          "url": "https://api.oneapi.paintbot.top/v1",
+          "source_url": "https://oneapi.paintbot.top",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": null,
+          "elapsed_ms": 21274
+        },
+        {
+          "url": "https://oneapi.paintbot.top/v1",
+          "source_url": "https://oneapi.paintbot.top",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": 401,
+          "elapsed_ms": 21360
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "巨量API",
+      "homepage": "https://api.yidvps.cn",
+      "models_from_readme": "多模型",
+      "latency_from_readme": "61ms",
+      "checked_at": "2026-05-08T11:00:25+00:00",
+      "homepage_status": 200,
+      "homepage_ms": 23290,
+      "homepage_title": "",
+      "pages_checked": [
+        {
+          "url": "https://api.yidvps.cn",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 23290,
+          "final_url": "https://api.yidvps.cn",
+          "title": "",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://api.yidvps.cn/docs",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 21942,
+          "final_url": "https://api.yidvps.cn/docs",
+          "title": "",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://api.yidvps.cn/doc",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 21795,
+          "final_url": "https://api.yidvps.cn/doc",
+          "title": "",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        }
+      ],
+      "api_base_url_candidates": [
+        {
+          "url": "https://api.yidvps.cn",
+          "source_url": "https://api.yidvps.cn",
+          "confidence": "medium",
+          "reason": "same-site URL looks like an API endpoint",
+          "evidence": "",
+          "status": 200,
+          "elapsed_ms": 21784
+        },
+        {
+          "url": "https://api.yidvps.cn/wallet",
+          "source_url": "https://api.yidvps.cn",
+          "confidence": "medium",
+          "reason": "same-site URL looks like an API endpoint",
+          "evidence": "",
+          "status": 200,
+          "elapsed_ms": 21796
+        },
+        {
+          "url": "https://api.api.yidvps.cn/v1",
+          "source_url": "https://api.yidvps.cn",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": null,
+          "elapsed_ms": 22040
+        },
+        {
+          "url": "https://api.yidvps.cn/v1",
+          "source_url": "https://api.yidvps.cn",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": 401,
+          "elapsed_ms": 21606
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "晴辰云",
+      "homepage": "https://gpt.qt.cool",
+      "models_from_readme": "多模型",
+      "latency_from_readme": "63ms",
+      "checked_at": "2026-05-08T10:59:47+00:00",
+      "homepage_status": 200,
+      "homepage_ms": 22692,
+      "homepage_title": "AI API 内部测试平台",
+      "pages_checked": [
+        {
+          "url": "https://gpt.qt.cool",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 22692,
+          "final_url": "https://gpt.qt.cool",
+          "title": "AI API 内部测试平台",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://gpt.qt.cool/api-doc.html",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 22054,
+          "final_url": "https://gpt.qt.cool/api-doc.html",
+          "title": "晴辰云 - API 接入文档",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://gpt.qt.cool/status.html",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 22084,
+          "final_url": "https://gpt.qt.cool/status.html",
+          "title": "服务状态 - 晴辰云",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        }
+      ],
+      "api_base_url_candidates": [
+        {
+          "url": "http://your-server:8082/v1",
+          "source_url": "https://gpt.qt.cool",
+          "confidence": "high",
+          "reason": "explicit API-like URL found in page",
+          "evidence": "模型路由与故障转移 api-example.js import OpenAI from 'openai' ; const client = new OpenAI({ baseURL: 'http://your-server:8082/v1' , apiKey: 'sk-your-api-key' , }); const res = await client.chat.completions.create({ model: 'au",
+          "status": null,
+          "elapsed_ms": 6841
+        },
+        {
+          "url": "https://api.gpt.qt.cool/v1",
+          "source_url": "https://gpt.qt.cool",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": null,
+          "elapsed_ms": 20904
+        },
+        {
+          "url": "https://gpt.qt.cool/v1",
+          "source_url": "https://gpt.qt.cool",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": 200,
+          "elapsed_ms": 21877
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "云智API",
+      "homepage": "https://yunzhiapi.cn",
+      "models_from_readme": "多模型",
+      "latency_from_readme": "66ms",
+      "checked_at": "2026-05-08T11:01:52+00:00",
+      "homepage_status": 200,
+      "homepage_ms": 22912,
+      "homepage_title": "云智API - 优质的接口调用服务平台",
+      "pages_checked": [
+        {
+          "url": "https://yunzhiapi.cn",
+          "ok": true,
+          "status": 200,
+          "elapsed_ms": 22912,
+          "final_url": "https://yunzhiapi.cn",
+          "title": "云智API - 优质的接口调用服务平台",
+          "content_type": "text/html; charset=UTF-8",
+          "error": null
+        },
+        {
+          "url": "https://yunzhiapi.cn/docs",
+          "ok": true,
+          "status": 404,
+          "elapsed_ms": 21619,
+          "final_url": "https://yunzhiapi.cn/docs",
+          "title": "404 - 页面未找到 | 云智计算",
+          "content_type": "text/html",
+          "error": null
+        },
+        {
+          "url": "https://yunzhiapi.cn/doc",
+          "ok": true,
+          "status": 404,
+          "elapsed_ms": 21569,
+          "final_url": "https://yunzhiapi.cn/doc",
+          "title": "404 - 页面未找到 | 云智计算",
+          "content_type": "text/html",
+          "error": null
+        }
+      ],
+      "api_base_url_candidates": [
+        {
+          "url": "https://yunzhiapi.cn/API",
+          "source_url": "https://yunzhiapi.cn",
+          "confidence": "high",
+          "reason": "explicit API-like URL found in page",
+          "evidence": "JSON OutPut client.js import axios from 'axios' ; const api = axios . create ({ baseURL : 'https://yunzhiapi.cn/API/dmbcfx/index.php' , timeout : 5000 , headers : { 'X-SDK-Version' : '3.0 - (♡>𖥦 } }); export con",
+          "status": 404,
+          "elapsed_ms": 21576
+        },
+        {
+          "url": "https://api.yunzhiapi.cn/v1",
+          "source_url": "https://yunzhiapi.cn",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": null,
+          "elapsed_ms": 21616
+        },
+        {
+          "url": "https://yunzhiapi.cn/v1",
+          "source_url": "https://yunzhiapi.cn",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": null,
+          "elapsed_ms": 25494
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "88API",
+      "homepage": "https://88api.apifox.cn",
+      "models_from_readme": "多模型",
+      "latency_from_readme": "69ms",
+      "checked_at": "2026-05-08T11:02:16+00:00",
+      "homepage_status": null,
+      "homepage_ms": 28101,
+      "homepage_title": null,
+      "pages_checked": [
+        {
+          "url": "https://88api.apifox.cn",
+          "ok": false,
+          "status": null,
+          "elapsed_ms": 28101,
+          "final_url": null,
+          "title": null,
+          "content_type": null,
+          "error": "URLError: <urlopen error _ssl.c:983: The handshake operation timed out>"
+        },
+        {
+          "url": "https://88api.apifox.cn/docs",
+          "ok": true,
+          "status": 404,
+          "elapsed_ms": 26227,
+          "final_url": "https://88api.apifox.cn/docs",
+          "title": "88API 接口对接",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        },
+        {
+          "url": "https://88api.apifox.cn/doc",
+          "ok": true,
+          "status": 404,
+          "elapsed_ms": 24904,
+          "final_url": "https://88api.apifox.cn/doc",
+          "title": "88API 接口对接",
+          "content_type": "text/html; charset=utf-8",
+          "error": null
+        }
+      ],
+      "api_base_url_candidates": [
+        {
+          "url": "https://docs.apifox.com/api",
+          "source_url": "https://88api.apifox.cn/docs",
+          "confidence": "medium",
+          "reason": "explicit API-like URL found in page",
+          "evidence": "",
+          "status": 404,
+          "elapsed_ms": 24175
+        },
+        {
+          "url": "https://88api.apifox.cn/v1",
+          "source_url": "https://88api.apifox.cn",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": 404,
+          "elapsed_ms": 19247
+        },
+        {
+          "url": "https://api.88api.apifox.cn/v1",
+          "source_url": "https://88api.apifox.cn",
+          "confidence": "low",
+          "reason": "inferred from reachable host; not confirmed by page text",
+          "evidence": "",
+          "status": null,
+          "elapsed_ms": 26066
+        }
+      ]
+    }
+  ]
+}

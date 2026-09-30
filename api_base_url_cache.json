@@ -1,0 +1,902 @@
+{
+  "https://6i2.com": {
+    "api_base_url": "https://api.6i2.com",
+    "api_latency": "20363ms",
+    "updated_at": "2026-05-09T08:31:30+00:00"
+  },
+  "https://terminal.pub": {
+    "api_base_url": "https://terminal.pub",
+    "api_latency": "21347ms",
+    "updated_at": "2026-05-09T08:31:35+00:00"
+  },
+  "https://ai.airoe.cn": {
+    "api_base_url": "https://api.ai.airoe.cn",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:31:51+00:00"
+  },
+  "https://oneapi.paintbot.top": {
+    "api_base_url": "https://api.oneapi.paintbot.top",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:31:52+00:00"
+  },
+  "https://ai.adbog.com": {
+    "api_base_url": "https://api.ai.adbog.com",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:31:52+00:00"
+  },
+  "https://buzzai.cc": {
+    "api_base_url": "https://api.buzzai.cc",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:31:55+00:00"
+  },
+  "https://api.suchuang.vip": {
+    "api_base_url": "https://api.api.suchuang.vip",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:31:57+00:00"
+  },
+  "https://jiekou.ai": {
+    "api_base_url": "https://api.jiekou.ai",
+    "api_latency": "21831ms",
+    "updated_at": "2026-05-09T08:32:03+00:00"
+  },
+  "https://gpt.qt.cool": {
+    "api_base_url": "https://api.gpt.qt.cool",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:32:08+00:00"
+  },
+  "https://api.yidvps.cn": {
+    "api_base_url": "https://api.yidvps.cn",
+    "api_latency": "20577ms",
+    "updated_at": "2026-05-09T08:32:13+00:00"
+  },
+  "https://instcopilot-api.com": {
+    "api_base_url": "https://instcopilot-api.com",
+    "api_latency": "11ms",
+    "updated_at": "2026-05-09T08:32:16+00:00"
+  },
+  "https://open.api.gu28.top": {
+    "api_base_url": "https://open.api.gu28.top",
+    "api_latency": "20ms",
+    "updated_at": "2026-05-09T08:32:16+00:00"
+  },
+  "https://nodapi.com": {
+    "api_base_url": "https://nodapi.com",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:32:19+00:00"
+  },
+  "https://newai.aichat.ink": {
+    "api_base_url": "https://newai.aichat.ink",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:32:21+00:00"
+  },
+  "https://timesniper.club": {
+    "api_base_url": "https://api.timesniper.club",
+    "api_latency": "21742ms",
+    "updated_at": "2026-05-09T08:32:21+00:00"
+  },
+  "https://yunzhiapi.cn": {
+    "api_base_url": "https://yunzhiapi.cn",
+    "api_latency": "40817ms",
+    "updated_at": "2026-05-09T08:32:31+00:00"
+  },
+  "https://dmxapi.cn": {
+    "api_base_url": "https://www.aiqbh.com",
+    "api_latency": "2ms",
+    "updated_at": "2026-05-09T08:32:32+00:00"
+  },
+  "https://88api.apifox.cn": {
+    "api_base_url": "https://docs.apifox.com",
+    "api_latency": "20583ms",
+    "updated_at": "2026-05-09T08:32:36+00:00"
+  },
+  "https://x.dogenet.win": {
+    "api_base_url": "https://docs.ohmygpt.com",
+    "api_latency": "20904ms",
+    "updated_at": "2026-05-09T08:32:39+00:00"
+  },
+  "https://ddshub.cc": {
+    "api_base_url": "https://api.ddshub.cc",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:33:02+00:00"
+  },
+  "https://newapi.jianxiaozhi.chat": {
+    "api_base_url": "https://newapi.jianxiaozhi.chat",
+    "api_latency": "20420ms",
+    "updated_at": "2026-05-09T08:33:18+00:00"
+  },
+  "https://siliconflow.cn": {
+    "api_base_url": "https://api.siliconflow.cn",
+    "api_latency": "20494ms",
+    "updated_at": "2026-05-09T08:33:18+00:00"
+  },
+  "https://compshare.cn": {
+    "api_base_url": "https://api.compshare.cn",
+    "api_latency": "20408ms",
+    "updated_at": "2026-05-09T08:33:19+00:00"
+  },
+  "https://xinglianapi.com": {
+    "api_base_url": "https://api.xinglianapi.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:33:34+00:00"
+  },
+  "https://xiaoruiapi.cc": {
+    "api_base_url": "https://api.xiaoruiapi.cc",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:33:35+00:00"
+  },
+  "https://shengsuanyun.com": {
+    "api_base_url": "https://shengsuanyun.com",
+    "api_latency": "20389ms",
+    "updated_at": "2026-05-09T08:33:37+00:00"
+  },
+  "https://nuwaapi.com": {
+    "api_base_url": "https://api.nuwaapi.com",
+    "api_latency": "20924ms",
+    "updated_at": "2026-05-09T08:33:42+00:00"
+  },
+  "https://xeduapi.com": {
+    "api_base_url": "https://api.xeduapi.com",
+    "api_latency": "21552ms",
+    "updated_at": "2026-05-09T08:33:46+00:00"
+  },
+  "https://ocool.ai": {
+    "api_base_url": "https://api.ocool.ai",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:33:51+00:00"
+  },
+  "https://muskpay.top": {
+    "api_base_url": "https://api.muskpay.top",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:33:52+00:00"
+  },
+  "https://monking.ai": {
+    "api_base_url": "https://monking.ai",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:33:59+00:00"
+  },
+  "https://chintao.cn": {
+    "api_base_url": "https://chintao.cn",
+    "api_latency": "20523ms",
+    "updated_at": "2026-05-09T08:34:03+00:00"
+  },
+  "https://new.lemonapi.site": {
+    "api_base_url": "https://api.new.lemonapi.site",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:34:10+00:00"
+  },
+  "https://api.nio.gs": {
+    "api_base_url": "https://api.api.nio.gs",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:34:18+00:00"
+  },
+  "https://302.ai": {
+    "api_base_url": "https://302.ai",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:34:18+00:00"
+  },
+  "https://api.chatfire.cn": {
+    "api_base_url": "https://api.api.chatfire.cn",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:34:22+00:00"
+  },
+  "https://kkidc.com": {
+    "api_base_url": "https://ai.kkidc.com",
+    "api_latency": "20353ms",
+    "updated_at": "2026-05-09T08:34:36+00:00"
+  },
+  "https://aihubmix.com": {
+    "api_base_url": "https://api.aihubmix.com",
+    "api_latency": "20951ms",
+    "updated_at": "2026-05-09T08:34:43+00:00"
+  },
+  "https://openclaudecode.cn": {
+    "api_base_url": "https://openclaudecode.cn",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:35:18+00:00"
+  },
+  "https://qnaigc.com": {
+    "api_base_url": "https://api.qnaigc.com",
+    "api_latency": "20389ms",
+    "updated_at": "2026-05-09T08:34:59+00:00"
+  },
+  "https://aicanapi.com": {
+    "api_base_url": "https://aicanapi.com",
+    "api_latency": "20847ms",
+    "updated_at": "2026-05-09T08:35:00+00:00"
+  },
+  "https://api.bltcy.ai": {
+    "api_base_url": "https://api.api.bltcy.ai",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:35:04+00:00"
+  },
+  "https://nano-gpt.com": {
+    "api_base_url": "https://nano-gpt.com",
+    "api_latency": "20942ms",
+    "updated_at": "2026-05-09T08:35:06+00:00"
+  },
+  "https://api.whatai.cc": {
+    "api_base_url": "https://api.api.whatai.cc",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:35:19+00:00"
+  },
+  "https://koalaapi.com": {
+    "api_base_url": "https://api.koalaapi.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:35:23+00:00"
+  },
+  "https://vibecodingapi.ai": {
+    "api_base_url": "https://vibecodingapi.ai",
+    "api_latency": "20848ms",
+    "updated_at": "2026-05-09T08:35:26+00:00"
+  },
+  "https://s2a.865199.xyz": {
+    "api_base_url": "https://api.s2a.865199.xyz",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:35:31+00:00"
+  },
+  "https://xcode.best": {
+    "api_base_url": "https://api.xcode.best",
+    "api_latency": "21050ms",
+    "updated_at": "2026-05-09T08:35:34+00:00"
+  },
+  "https://api.v3.cm": {
+    "api_base_url": "https://api.api.v3.cm",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:35:36+00:00"
+  },
+  "https://api.laozhang.ai": {
+    "api_base_url": "https://api.api.laozhang.ai",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:35:36+00:00"
+  },
+  "https://4sapi.com": {
+    "api_base_url": "https://api.4sapi.com",
+    "api_latency": "8ms",
+    "updated_at": "2026-05-09T08:35:45+00:00"
+  },
+  "https://api.lingyaai.cn": {
+    "api_base_url": "https://api.api.lingyaai.cn",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:35:48+00:00"
+  },
+  "https://35.aigcbest.top": {
+    "api_base_url": "https://api.35.aigcbest.top",
+    "api_latency": "21ms",
+    "updated_at": "2026-05-09T08:36:02+00:00"
+  },
+  "https://gptgod.cloud": {
+    "api_base_url": "https://api.gptgod.cloud",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:36:04+00:00"
+  },
+  "https://api.gueai.com": {
+    "api_base_url": "https://api.api.gueai.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:36:06+00:00"
+  },
+  "https://smz6.com": {
+    "api_base_url": "https://api.smz6.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:36:21+00:00"
+  },
+  "https://ccfly.codes": {
+    "api_base_url": "https://api.ccfly.codes",
+    "api_latency": "21101ms",
+    "updated_at": "2026-05-09T08:36:23+00:00"
+  },
+  "https://qiuqiutoken.com": {
+    "api_base_url": "https://api.qiuqiutoken.com",
+    "api_latency": "21030ms",
+    "updated_at": "2026-05-09T08:36:28+00:00"
+  },
+  "https://api.bbww.top": {
+    "api_base_url": "https://api.bbww.top",
+    "api_latency": "21094ms",
+    "updated_at": "2026-05-09T08:36:47+00:00"
+  },
+  "https://cn.nyi.cn": {
+    "api_base_url": "https://cn.nyi.cn",
+    "api_latency": "20937ms",
+    "updated_at": "2026-05-09T08:36:47+00:00"
+  },
+  "https://switchbase.vip": {
+    "api_base_url": "https://api.switchbase.vip",
+    "api_latency": "27ms",
+    "updated_at": "2026-05-09T08:36:50+00:00"
+  },
+  "https://treerouter.com": {
+    "api_base_url": "https://api.treerouter.com",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:37:03+00:00"
+  },
+  "https://fastapi.aabao.vip": {
+    "api_base_url": "https://t.me",
+    "api_latency": "21311ms",
+    "updated_at": "2026-05-09T08:37:06+00:00"
+  },
+  "https://api.openai-ch.top": {
+    "api_base_url": "https://api.api.openai-ch.top",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:37:08+00:00"
+  },
+  "https://anpin.ai": {
+    "api_base_url": "https://api.anpin.ai",
+    "api_latency": "21728ms",
+    "updated_at": "2026-05-09T08:37:14+00:00"
+  },
+  "https://api.owlai.tech": {
+    "api_base_url": "https://api.owlai.tech",
+    "api_latency": "20980ms",
+    "updated_at": "2026-05-09T08:37:14+00:00"
+  },
+  "https://api.enencloud.top": {
+    "api_base_url": "https://api.api.enencloud.top",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:37:15+00:00"
+  },
+  "https://globalai.vip": {
+    "api_base_url": "https://api.globalai.vip",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:37:18+00:00"
+  },
+  "https://vvcode.top": {
+    "api_base_url": "https://vvcode.top",
+    "api_latency": "20932ms",
+    "updated_at": "2026-05-09T08:37:21+00:00"
+  },
+  "https://vip.undyingapi.com": {
+    "api_base_url": "https://vip.undyingapi.com",
+    "api_latency": "21309ms",
+    "updated_at": "2026-05-09T08:37:21+00:00"
+  },
+  "https://naapi.cc": {
+    "api_base_url": "https://naapi.cc",
+    "api_latency": "21392ms",
+    "updated_at": "2026-05-09T08:37:30+00:00"
+  },
+  "https://gptapi.us": {
+    "api_base_url": "https://api.gptapi.us",
+    "api_latency": "21336ms",
+    "updated_at": "2026-05-09T08:37:41+00:00"
+  },
+  "https://deepkey.top": {
+    "api_base_url": "https://deepkey.top",
+    "api_latency": "21484ms",
+    "updated_at": "2026-05-09T08:37:47+00:00"
+  },
+  "https://findcg.com": {
+    "api_base_url": "https://findcg.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:37:50+00:00"
+  },
+  "https://uuapi.net": {
+    "api_base_url": "https://uuapi.net",
+    "api_latency": "21288ms",
+    "updated_at": "2026-05-09T08:38:12+00:00"
+  },
+  "https://2api.rkai6.com": {
+    "api_base_url": "https://api.2api.rkai6.com",
+    "api_latency": "4ms",
+    "updated_at": "2026-05-09T08:38:15+00:00"
+  },
+  "https://ofox.ai": {
+    "api_base_url": "https://api.ofox.ai",
+    "api_latency": "22399ms",
+    "updated_at": "2026-05-09T08:39:16+00:00"
+  },
+  "https://tokenflux.dev": {
+    "api_base_url": "https://tokenflux.dev",
+    "api_latency": "20995ms",
+    "updated_at": "2026-05-09T08:38:30+00:00"
+  },
+  "https://chatapi.onechats.top": {
+    "api_base_url": "https://chatapi.onechats.top",
+    "api_latency": "20973ms",
+    "updated_at": "2026-05-09T08:38:32+00:00"
+  },
+  "https://sssaicode.com": {
+    "api_base_url": "https://api.sssaicode.com",
+    "api_latency": "21214ms",
+    "updated_at": "2026-05-09T08:38:33+00:00"
+  },
+  "https://openai-labs.com": {
+    "api_base_url": "https://openai-labs.com",
+    "api_latency": "21018ms",
+    "updated_at": "2026-05-09T08:38:39+00:00"
+  },
+  "https://qianweikeji.fun": {
+    "api_base_url": "https://api.qianweikeji.fun",
+    "api_latency": "20897ms",
+    "updated_at": "2026-05-09T08:38:48+00:00"
+  },
+  "https://cnapi.kksj.org": {
+    "api_base_url": "https://cnapi.kksj.org",
+    "api_latency": "21552ms",
+    "updated_at": "2026-05-09T08:38:52+00:00"
+  },
+  "https://dawclaudecode.com": {
+    "api_base_url": "https://api.dawclaudecode.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:39:00+00:00"
+  },
+  "https://ai.smartall.cloud": {
+    "api_base_url": "https://api.ai.smartall.cloud",
+    "api_latency": "18ms",
+    "updated_at": "2026-05-09T08:39:02+00:00"
+  },
+  "https://huashang.dpdns.org": {
+    "api_base_url": "https://huashang.dpdns.org",
+    "api_latency": "21418ms",
+    "updated_at": "2026-05-09T08:39:04+00:00"
+  },
+  "https://azapi.com.cn": {
+    "api_base_url": "https://api.azapi.com.cn",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:39:04+00:00"
+  },
+  "https://ai98.vip": {
+    "api_base_url": "https://api.ai98.vip",
+    "api_latency": "20ms",
+    "updated_at": "2026-05-09T08:39:07+00:00"
+  },
+  "https://dragoncode.codes": {
+    "api_base_url": "https://api.dragoncode.codes",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:39:16+00:00"
+  },
+  "https://poixe.com": {
+    "api_base_url": "https://api.poixe.com",
+    "api_latency": "21546ms",
+    "updated_at": "2026-05-09T08:39:17+00:00"
+  },
+  "https://abcrelay.com": {
+    "api_base_url": "https://api.abcrelay.com",
+    "api_latency": "21918ms",
+    "updated_at": "2026-05-09T08:39:19+00:00"
+  },
+  "https://foxcode.rjj.cc": {
+    "api_base_url": "https://api.foxcode.rjj.cc",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:39:28+00:00"
+  },
+  "https://api.dzzi.ai": {
+    "api_base_url": "https://api.api.dzzi.ai",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:39:57+00:00"
+  },
+  "https://anyone.ai": {
+    "api_base_url": "https://anyone.ai",
+    "api_latency": "21168ms",
+    "updated_at": "2026-05-09T08:39:57+00:00"
+  },
+  "https://lemondata.cc": {
+    "api_base_url": "https://api.example.com",
+    "api_latency": "12ms",
+    "updated_at": "2026-05-09T08:39:59+00:00"
+  },
+  "https://chat-api4.087654.xyz": {
+    "api_base_url": "https://chat-api4.087654.xyz",
+    "api_latency": "21397ms",
+    "updated_at": "2026-05-09T08:40:01+00:00"
+  },
+  "https://ctok.ai": {
+    "api_base_url": "https://api.ctok.ai",
+    "api_latency": "21759ms",
+    "updated_at": "2026-05-09T08:40:04+00:00"
+  },
+  "https://ai.17nas.com": {
+    "api_base_url": "https://api.ai.17nas.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:40:19+00:00"
+  },
+  "https://aixj.vip": {
+    "api_base_url": "https://api.aixj.vip",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:40:27+00:00"
+  },
+  "https://opencode.ai": {
+    "api_base_url": "https://opencode.ai",
+    "api_latency": "20937ms",
+    "updated_at": "2026-05-09T08:40:27+00:00"
+  },
+  "https://opus.gptuu.com": {
+    "api_base_url": "https://api.opus.gptuu.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:40:35+00:00"
+  },
+  "https://9router.com": {
+    "api_base_url": "https://api.9router.com",
+    "api_latency": "20851ms",
+    "updated_at": "2026-05-09T08:40:35+00:00"
+  },
+  "https://api.ikuncode.cc": {
+    "api_base_url": "https://api.ikuncode.cc",
+    "api_latency": "21223ms",
+    "updated_at": "2026-05-09T08:40:50+00:00"
+  },
+  "https://api.gptoai.cc": {
+    "api_base_url": "https://api.api.gptoai.cc",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:40:57+00:00"
+  },
+  "https://api.xinjianya.top": {
+    "api_base_url": "https://api.api.xinjianya.top",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:41:02+00:00"
+  },
+  "https://claudecn.top": {
+    "api_base_url": "https://api.claudecn.top",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:41:02+00:00"
+  },
+  "https://pateway.ai": {
+    "api_base_url": "https://api.pateway.ai",
+    "api_latency": "21836ms",
+    "updated_at": "2026-05-09T08:41:03+00:00"
+  },
+  "https://stark-gpt-load.onrender.com": {
+    "api_base_url": "https://api.stark-gpt-load.onrender.com",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:41:03+00:00"
+  },
+  "https://timyai.com": {
+    "api_base_url": "https://api.timyai.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:41:13+00:00"
+  },
+  "https://aicoding.sh": {
+    "api_base_url": "https://api.aicoding.sh",
+    "api_latency": "21021ms",
+    "updated_at": "2026-05-09T08:41:22+00:00"
+  },
+  "https://api.ephone.ai": {
+    "api_base_url": "https://api.ephone.ai",
+    "api_latency": "42425ms",
+    "updated_at": "2026-05-09T08:41:27+00:00"
+  },
+  "https://code.b886.top": {
+    "api_base_url": "https://api.code.b886.top",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:41:43+00:00"
+  },
+  "https://matrcode.com": {
+    "api_base_url": "https://api.matrcode.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:41:45+00:00"
+  },
+  "https://openrouter.ai": {
+    "api_base_url": "https://api.openrouter.ai",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:41:48+00:00"
+  },
+  "https://picoai.top": {
+    "api_base_url": "https://api.picoai.top",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:41:49+00:00"
+  },
+  "https://right.codes": {
+    "api_base_url": "https://right.codes",
+    "api_latency": "20998ms",
+    "updated_at": "2026-05-09T08:41:59+00:00"
+  },
+  "https://bytecatcode.org": {
+    "api_base_url": "https://bytecatcode.org",
+    "api_latency": "42244ms",
+    "updated_at": "2026-05-09T08:42:08+00:00"
+  },
+  "https://api.hotaruapi.top": {
+    "api_base_url": "https://api.api.hotaruapi.top",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:42:13+00:00"
+  },
+  "https://aigocode.com": {
+    "api_base_url": "https://aigocode.com",
+    "api_latency": "42508ms",
+    "updated_at": "2026-05-09T08:42:18+00:00"
+  },
+  "https://n1n.ai": {
+    "api_base_url": "https://docs.n1n.ai",
+    "api_latency": "22196ms",
+    "updated_at": "2026-05-09T08:42:22+00:00"
+  },
+  "https://lxtech.icu": {
+    "api_base_url": "https://api.lxtech.icu",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:42:36+00:00"
+  },
+  "https://anyrouter.top": {
+    "api_base_url": "https://api.anyrouter.top",
+    "api_latency": "17ms",
+    "updated_at": "2026-05-09T08:42:48+00:00"
+  },
+  "https://api1.zhtec.xyz": {
+    "api_base_url": "https://api1.zhtec.xyz",
+    "api_latency": "21216ms",
+    "updated_at": "2026-05-09T08:42:48+00:00"
+  },
+  "https://cubence.com": {
+    "api_base_url": "https://api.fontshare.com",
+    "api_latency": "22114ms",
+    "updated_at": "2026-05-09T08:43:11+00:00"
+  },
+  "https://zenmux.ai": {
+    "api_base_url": "https://zenmux.ai",
+    "api_latency": "21191ms",
+    "updated_at": "2026-05-09T08:43:11+00:00"
+  },
+  "https://apinebula.com": {
+    "api_base_url": "https://apinebula.com",
+    "api_latency": "21383ms",
+    "updated_at": "2026-05-09T08:43:13+00:00"
+  },
+  "https://aicodemirror.com": {
+    "api_base_url": "https://aicodemirror.com",
+    "api_latency": "42284ms",
+    "updated_at": "2026-05-09T08:43:19+00:00"
+  },
+  "https://dataeyes.ai": {
+    "api_base_url": "https://img.dataeyes.ai",
+    "api_latency": "21171ms",
+    "updated_at": "2026-05-09T08:43:25+00:00"
+  },
+  "https://api.yuegle.com": {
+    "api_base_url": "https://api.api.yuegle.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:43:28+00:00"
+  },
+  "https://chefshop.ai": {
+    "api_base_url": "https://api.chefshop.ai",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:43:31+00:00"
+  },
+  "https://aiberm.com": {
+    "api_base_url": "https://aiberm.com",
+    "api_latency": "21063ms",
+    "updated_at": "2026-05-09T08:43:31+00:00"
+  },
+  "https://e-flowcode.cc": {
+    "api_base_url": "https://api.e-flowcode.cc",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:43:32+00:00"
+  },
+  "https://api.nekoapi.com": {
+    "api_base_url": "https://api.api.nekoapi.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:43:34+00:00"
+  },
+  "https://nekocode.ai": {
+    "api_base_url": "https://nekocode.ai",
+    "api_latency": "21148ms",
+    "updated_at": "2026-05-09T08:43:44+00:00"
+  },
+  "https://packyapi.com": {
+    "api_base_url": "https://api.packyapi.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:43:44+00:00"
+  },
+  "https://ai.hybgzs.com": {
+    "api_base_url": "https://api.ai.hybgzs.com",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:43:54+00:00"
+  },
+  "https://aizex.top": {
+    "api_base_url": "https://api.aizex.top",
+    "api_latency": "22ms",
+    "updated_at": "2026-05-09T08:43:58+00:00"
+  },
+  "https://timicc.com": {
+    "api_base_url": "https://api.timicc.com",
+    "api_latency": "12ms",
+    "updated_at": "2026-05-09T08:44:08+00:00"
+  },
+  "https://kfcv50.link": {
+    "api_base_url": "https://api.kfcv50.link",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:44:20+00:00"
+  },
+  "https://zxai.work": {
+    "api_base_url": "https://api.zxai.work",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:44:23+00:00"
+  },
+  "https://shiyunapi.com": {
+    "api_base_url": "https://api.shiyunapi.com",
+    "api_latency": "12ms",
+    "updated_at": "2026-05-09T08:44:34+00:00"
+  },
+  "https://poloai.top": {
+    "api_base_url": "https://api.poloai.top",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:44:48+00:00"
+  },
+  "https://new.xjai.cc": {
+    "api_base_url": "https://api.new.xjai.cc",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:44:57+00:00"
+  },
+  "https://api.f2api.com": {
+    "api_base_url": "https://api.api.f2api.com",
+    "api_latency": "2ms",
+    "updated_at": "2026-05-09T08:44:58+00:00"
+  },
+  "https://codesome.ai": {
+    "api_base_url": "https://api.codesome.ai",
+    "api_latency": "1ms",
+    "updated_at": "2026-05-09T08:44:59+00:00"
+  },
+  "https://apipro.maynor1024.live": {
+    "api_base_url": "https://api.apipro.maynor1024.live",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:45:05+00:00"
+  },
+  "https://mikuapi.org": {
+    "api_base_url": "https://mikuapi.org",
+    "api_latency": "21415ms",
+    "updated_at": "2026-05-09T08:45:12+00:00"
+  },
+  "https://jeniya.top": {
+    "api_base_url": "https://api.jeniya.top",
+    "api_latency": "17ms",
+    "updated_at": "2026-05-09T08:45:15+00:00"
+  },
+  "https://xinyuanai666.com": {
+    "api_base_url": "https://api.xinyuanai666.com",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:45:16+00:00"
+  },
+  "https://chatgtp.cn": {
+    "api_base_url": "https://chatgtp.cn",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:45:18+00:00"
+  },
+  "https://console.claudeapi.com": {
+    "api_base_url": "https://api.console.claudeapi.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:45:18+00:00"
+  },
+  "https://api.tomchat.fun": {
+    "api_base_url": "https://api.api.tomchat.fun",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:45:23+00:00"
+  },
+  "https://go.sbgpt.site": {
+    "api_base_url": "https://api.go.sbgpt.site",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:45:32+00:00"
+  },
+  "https://co.yes.vg": {
+    "api_base_url": "https://api.co.yes.vg",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:45:39+00:00"
+  },
+  "https://yunwu.ai": {
+    "api_base_url": "https://yunwu.ai",
+    "api_latency": "21216ms",
+    "updated_at": "2026-05-09T08:45:44+00:00"
+  },
+  "https://runapi.co": {
+    "api_base_url": "https://api.runapi.co",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:45:44+00:00"
+  },
+  "https://apiyi.com": {
+    "api_base_url": "https://api.apiyi.com",
+    "api_latency": "21183ms",
+    "updated_at": "2026-05-09T08:45:54+00:00"
+  },
+  "https://crazyrouter.com": {
+    "api_base_url": "https://crazyrouter.com",
+    "api_latency": "191575ms",
+    "updated_at": "2026-05-09T08:45:59+00:00"
+  },
+  "https://yansd666.com": {
+    "api_base_url": "https://api.yansd666.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:46:10+00:00"
+  },
+  "https://88996.cloud": {
+    "api_base_url": "https://api.88996.cloud",
+    "api_latency": "21183ms",
+    "updated_at": "2026-05-09T08:46:25+00:00"
+  },
+  "https://wzjself.org": {
+    "api_base_url": "https://wzjself.org",
+    "api_latency": "12ms",
+    "updated_at": "2026-05-09T08:46:36+00:00"
+  },
+  "https://ai.fengsili.online": {
+    "api_base_url": "https://api.ai.fengsili.online",
+    "api_latency": "3ms",
+    "updated_at": "2026-05-09T08:46:38+00:00"
+  },
+  "https://codex-api.packycode.com": {
+    "api_base_url": "https://api.codex-api.packycode.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:46:42+00:00"
+  },
+  "https://api.zyai.online": {
+    "api_base_url": "https://api.zyai.online",
+    "api_latency": "21423ms",
+    "updated_at": "2026-05-09T08:46:43+00:00"
+  },
+  "https://closeai-asia.com": {
+    "api_base_url": "https://closeai-asia.com",
+    "api_latency": "21ms",
+    "updated_at": "2026-05-09T08:46:57+00:00"
+  },
+  "https://duckcoding.ai": {
+    "api_base_url": "https://duckcoding.ai",
+    "api_latency": "19ms",
+    "updated_at": "2026-05-09T08:47:00+00:00"
+  },
+  "https://catclawai.top": {
+    "api_base_url": "https://catclawai.top",
+    "api_latency": "17ms",
+    "updated_at": "2026-05-09T08:47:04+00:00"
+  },
+  "https://uniaix.com": {
+    "api_base_url": "https://uniaix.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:47:10+00:00"
+  },
+  "https://tb-api.mkeai.com": {
+    "api_base_url": "https://api.tb-api.mkeai.com",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:47:21+00:00"
+  },
+  "https://chienapi.top": {
+    "api_base_url": "https://api.chienapi.top",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:47:23+00:00"
+  },
+  "https://ggwk1.online": {
+    "api_base_url": "https://ggwk1.online",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:47:24+00:00"
+  },
+  "https://hu.weiyusc.top": {
+    "api_base_url": "https://hu.weiyusc.top",
+    "api_latency": "18ms",
+    "updated_at": "2026-05-09T08:47:27+00:00"
+  },
+  "https://147ai.com": {
+    "api_base_url": "https://api.147ai.com",
+    "api_latency": "13ms",
+    "updated_at": "2026-05-09T08:47:28+00:00"
+  },
+  "https://chunxueapi.com": {
+    "api_base_url": "https://chunxueapi.com",
+    "api_latency": "18ms",
+    "updated_at": "2026-05-09T08:47:37+00:00"
+  },
+  "https://aihub-global.com": {
+    "api_base_url": "https://api.aihub-global.com",
+    "api_latency": "3ms",
+    "updated_at": "2026-05-09T08:47:39+00:00"
+  },
+  "https://aicodee.com": {
+    "api_base_url": "https://aicodee.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:47:45+00:00"
+  },
+  "https://4ksapi.com": {
+    "api_base_url": "https://4ksapi.com",
+    "api_latency": "14ms",
+    "updated_at": "2026-05-09T08:47:50+00:00"
+  },
+  "https://suanzhi.cloud": {
+    "api_base_url": "https://api.suanzhi.cloud",
+    "api_latency": "15ms",
+    "updated_at": "2026-05-09T08:48:05+00:00"
+  },
+  "https://easyrouter.io": {
+    "api_base_url": "https://api.easyrouter.io",
+    "api_latency": "12ms",
+    "updated_at": "2026-05-09T08:48:09+00:00"
+  },
+  "https://cca.maya.today": {
+    "api_base_url": "https://cca.maya.today",
+    "api_latency": "21136ms",
+    "updated_at": "2026-05-09T08:48:24+00:00"
+  }
+}

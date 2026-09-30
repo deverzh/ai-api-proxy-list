@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - link "logo" [ref=e9] [cursor=pointer]:
+      - /url: /
+      - img "logo" [ref=e11]
+    - navigation [ref=e15]
+    - generic [ref=e28]:
+      - button "切换至深色模式" [ref=e29] [cursor=pointer]:
+        - img [ref=e31]
+      - button "Switch to English" [ref=e37] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e50]:
+    - main:
+      - img [ref=e54]
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - img "Easy Router" [ref=e66]
+            - generic [ref=e67]: Easy Router
+          - paragraph [ref=e68]: 一站式 AI 接口分发管理系统，支持多种大模型，快速稳定，助力您的 AI 应用。
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: 导航
+            - link "首页" [ref=e72] [cursor=pointer]:
+              - /url: /
+            - link "Coding Plan" [ref=e73] [cursor=pointer]:
+              - /url: /coding-plan
+            - link "控制台" [ref=e74] [cursor=pointer]:
+              - /url: /console
+            - link "常见问题" [ref=e75] [cursor=pointer]:
+              - /url: /#faq-section
+            - link "模型广场" [ref=e76] [cursor=pointer]:
+              - /url: /pricing
+          - generic [ref=e77]:
+            - paragraph [ref=e78]: 支持
+            - link "商务合作" [ref=e79] [cursor=pointer]:
+              - /url: mailto:service@easyrouter.io
+            - link "技术支持" [ref=e80] [cursor=pointer]:
+              - /url: mailto:service@easyrouter.io
+      - generic [ref=e82]:
+        - generic [ref=e83]: © 2026 Easy Router. All rights reserved.
+        - link "service@easyrouter.io" [ref=e84] [cursor=pointer]:
+          - /url: mailto:service@easyrouter.io
