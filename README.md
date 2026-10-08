@@ -214,6 +214,7 @@
 | 180 | 微雨API | [hu.weiyusc.top](https://hu.weiyusc.top) | 多模型 | 待确认 | - | 超时 |
 | 181 | 极速AI | [aicodee.com](https://aicodee.com) | 多模型 | 待确认 | - | 超时 |
 | 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | 超时 |
+| 183 | TokenDos | [tokendos.com](https://www.tokendos.com) | Claude / GPT / Grok / DeepSeek 多模型聚合 | [api.tokendos.com](https://api.tokendos.com) | ~330ms | 350ms |
 
 ## 📚 数据来源
 
