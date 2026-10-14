@@ -215,6 +215,7 @@
 | 181 | 极速AI | [aicodee.com](https://aicodee.com) | 多模型 | 待确认 | - | 超时 |
 | 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | 超时 |
 
+|  | Midalo 米搭中转站 | [model.midalo.ai](https://model.midalo.ai/) | Claude / GPT / Gemini / DeepSeek / GLM / Kimi / 视频生成 |  |
 ## 📚 数据来源
 
 本项目的服务商数据主要来源于以下项目：
