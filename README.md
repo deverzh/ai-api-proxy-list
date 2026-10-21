@@ -222,7 +222,7 @@
 | 180 | 微雨API | [hu.weiyusc.top](https://hu.weiyusc.top) | 多模型 | 待确认 | - | 超时 |
 | 181 | 极速AI | [aicodee.com](https://aicodee.com) | 多模型 | 待确认 | - | 超时 |
 | 182 | 酸枝云 | [suanzhi.cloud](https://suanzhi.cloud) | 多模型 | 待确认 | - | 超时 |
-|  | removed | [removed.cc](https://removed.cc) | DeepSeek V4 / GLM-5.2-5.3 / Kimi K2.8-K3 / MiniMax M3 / Hunyuan 3-4 | [your-endpoint.example.com](https://your-endpoint.example.com) |  |  |
+|  | removed | [your-endpoint.example.com](https://your-endpoint.example.com/) | DeepSeek V4 / GLM-5.2-5.3 / Kimi K2.8-K3 / MiniMax M3 / Hunyuan 3-4 | [your-endpoint.example.com](https://your-endpoint.example.com) |  |  |
 
 ## 📚 数据来源
 
