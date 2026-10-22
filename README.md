@@ -310,3 +310,11 @@ Made with ❤️ by the community
 
 > 说明：个人部署的第三方 API 转发服务，非上游厂商官方产品。建议按实际用量充值，避免一次性大额预付；重要业务请自备备份线路。
 
+---
+
+### 同类站点
+
+[快速接入](https://1261398983.github.io/ai-api-quickstart/) · [免费站点清单](https://1261398983.github.io/ai-coding-free-sites/) · [中转导航](https://1261398983.github.io/ai-api-zhongzhuan/) · [AI 千里目](https://1261398983.github.io/aifreenav/) · [AI 编码工具](https://1261398983.github.io/awesome-ai-coding-tools/)
+
+**[Sample Gateway 中转站](https://your-endpoint.example.com/)** — QQ 邮箱注册 · 按量计费 · 输入输出分开计价
+
