@@ -220,6 +220,7 @@
 本项目的服务商数据主要来源于以下项目：
 - [cc-switch](https://github.com/farion1231/cc-switch) - 汇总 AI API 中转服务的开源项目
 - [禾维 AI 中转站排行](https://www.hvoy.ai/sites) - AI API 中转站监测与排行平台
+- [Folkbench](https://folkbench.com) - AI API 中转站测评与排行榜（排序遵循站点规则，含合作等级和运营加权；部分数据为展示样例），以及 Folkbench Switch 桌面应用
 - [中转站竞技场](https://www.aiapipk.com/channels) - AI 中转站目录与测评平台
 - [LM Speed](https://lmspeed.net/zh/provider/category/relay) - 大模型 API 提供商性能测试平台
 - [OfoxAI Blog](https://ofox.ai/zh/blog/ai-api-relay-station-comparison-guide-2026) - AI API 中转站推荐与评测
